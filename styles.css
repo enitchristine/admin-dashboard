@@ -14,7 +14,10 @@
 
     display: grid;
     grid-template-columns: 3fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 50px 80px;
+    gap: 5px;
+
+    background-color: aliceblue;
 }
 
 .search-bar{
@@ -27,14 +30,53 @@
     grid-row: 1/2;
 }
 
+.profile span{
+    font-size: medium;
+    font-weight: 600;
+}
+
 .welcome{
     grid-column: 1/2;
     grid-row: 2/3;
+
+    display: grid;
+    grid-template-columns: 1fr 6fr;
+    grid-template-rows: 1fr 4fr;
+}
+
+.welcome>img{
+    grid-row: 1/3;
+    grid-column: 1/2;
+}
+
+.welcome>span{
+    font-weight: 800;
+}
+
+.welcome> span + span{
+    font-size: 30px;
+    color: brown;
 }
 
 .buttons{
     grid-column: 2/3;
     grid-row: 2/3;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.btn{
+    width: 70px;
+    background-color: rgb(87, 135, 247);
+    color:aliceblue;
+    border-radius: 30px;
+    padding: 20px;
+    margin: 5px;
+    align-self: center;
+    text-align: center;
+    font-weight: 600;
+    font-size: medium;
 }
 
 .sidebar{
